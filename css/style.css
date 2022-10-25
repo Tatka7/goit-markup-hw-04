@@ -2,7 +2,7 @@
     --gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
 }
 
-.body {
+body {
     margin-right: auto;
     margin-left: auto;
     background-color: #fff;
@@ -173,7 +173,6 @@ img {
     fill: #757575;
     gap: 10px;
 }
-  
 
 /*-------Hero-------*/
 
@@ -381,7 +380,9 @@ img {
     fill: #afb1b8;
 }
 
-.net-link:hover{
+
+.net-link:hover,
+.net-link:focus {
     background-color: #2196f3;
 }
 
@@ -389,6 +390,10 @@ img {
     fill: #ffffff;
 }
 
+.net-link:focus .net-icon {
+    background-color: #2196f3;
+    fill: #ffffff;
+}
 
 /*-------clients-------*/
 
@@ -419,7 +424,6 @@ img {
     justify-content: center;
     align-items: center;
     align-items: center;
-    background: #F5F5F5;
     border-radius: 4px;
     border: 1px solid #afb1b8;
     fill: #afb1b8;
@@ -518,18 +522,22 @@ img {
 .social .social-icon {
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
-}
-
-.social-link:hover {
-    background-color: #2196f3;
-}
-
-.social-link:hover 
-.social-icon {
     fill: #ffffff;
 }
 
+.social-link:hover, 
+.social-link:focus {
+    background-color: #2196f3;
+}
+
+.social-link:hover .social-icon {
+    fill: #ffffff;
+}
+
+.social-link:focus .social-icon {
+    background-color: #2196f3;
+    fill: #ffffff;
+}
 
 /* ------- Portfolio section ------- */
 
